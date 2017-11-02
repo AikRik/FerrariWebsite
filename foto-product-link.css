@@ -60,9 +60,13 @@ h2.art-trigger img{
     border: 1px solid #d6d6d6;
 }
 .art-container .art-block {
-	margin:0 0 5px 0;	
+	margin:0 0 0 0;	
     padding: 20px;
+    background-color: gray;
     
+}
+   .fotoLink{ 
+    text-decoration: none;
 }
 
 h1 {
@@ -80,9 +84,6 @@ h1 {
     text-align: center;
     padding-left: 20%;
     opacity: 1.0;
-
-
-  
 
 
 }
