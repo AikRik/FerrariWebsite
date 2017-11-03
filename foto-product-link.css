@@ -144,6 +144,31 @@ h1 {
     height: 60px;
 }
 
+
 footer{
     color:red;
+}
+
+///Gallery///
+
+.mySlides {
+    display:none
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer; 
+    color:white; 
+}
+
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
+}
+
+iframe {
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+>>>>>>> bd33808557a8475f870496c23d1dc5eaffdaaef5
 }
