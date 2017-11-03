@@ -44,11 +44,14 @@ h2.art-active {
 }
 
 h2.art-trigger img{
+
 	padding: 0;
 	clear: both;
-	height:100%;
+	height:80%;
 	width: 100%;
 }
+
+
 
 .art-container {
     padding: 0;
@@ -140,6 +143,11 @@ h1 {
     height: 60px;
 }
 
+
+footer{
+    color:red;
+}
+
 ///Gallery///
 
 .mySlides {
@@ -161,4 +169,5 @@ iframe {
     left: 0%;
     right: 0%;
     margin: 0 auto;
+>>>>>>> bd33808557a8475f870496c23d1dc5eaffdaaef5
 }
