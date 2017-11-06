@@ -33,7 +33,7 @@ div.hidden {
 
 .column {
   float: left;
-  height: 400px;
+  height: 200px;
 
 }
 
@@ -188,7 +188,7 @@ img.demo {
 
 .imgleft {
   display: block;
-  max-width: 80%;
+  width: 70%;
   padding-left: 30px;
   padding-top: 30px;
 
