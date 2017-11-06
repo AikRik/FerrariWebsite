@@ -22,7 +22,8 @@
             <li><a href="ferrariProducts">Products</a></li>
             <li><a href="ferrariAbout">About</a></li>
         </ul>
-    </nav>    
+    </nav>
+    
     <br>
     <br>
     <br>
@@ -48,24 +49,24 @@
         <div class="art-accordion">
         <h2 class="art-trigger"><a href="#"><img src="images/488GTB.jpg"></a></h2>
         <div class="art-container">
-            <div class="art-block"><div class="fotoLink"><a class="fotoLink" href="PageProduct1.html" target="_blank" style="color: #2C2B33">The: 488GT</div></a></div>
+            <div class="art-block"><div class="fotoLink"><a class="fotoLink" href="PageProduct1.html"  style="color: #2C2B33">The: 488GT</div></a></div>
         </div>
         <h2 class="art-trigger"><a href="#"><img src="images/250GT.jpg"></a></h2>
         <div class="art-container">
-            <div class="art-block"><div class="fotoLink"><a  href="page3.html" target="_blank" style="color: #2C2B33">The: 250GT </div></a></div>
+            <div class="art-block"><div class="fotoLink"><a  href="ProductPage2.html" style="color: #2C2B33">The: 250GT </div></a></div>
 
         </div>
         <script type="text/javascript">
-        $(document).ready(function($) { //Set default open/close settings
+        $(document).ready(function($) { 
 
-            var divs = $('.art-accordion>div').hide(); //Hide/close all containers
+            var divs = $('.art-accordion>div').hide(); 
 
             var h2s = $('.art-accordion>h2').click(function() {
                 h2s.not(this).removeClass('active')
                 $(this).toggleClass('active')
                 divs.not($(this).next()).slideUp()
                 $(this).next().slideToggle()
-                return false; //Prevent the browser jump to the link anchor
+                return false; 
 
             });
             
