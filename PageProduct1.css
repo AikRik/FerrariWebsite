@@ -140,10 +140,11 @@ header {
 
 .p1txt1 {
     float: left;
+
 }
 
 .p1txt1 p {
-    max-width: 100%;
+    max-width: 90%;
     float: left;
 }
 
@@ -153,7 +154,7 @@ header {
 }
 
 .p1txt2 p {
-    max-width: 100%;
+    max-width: 90%;
     float: left;
 }
 
@@ -163,14 +164,16 @@ header {
 }
 
 .p1txt3 p {
-    max-width: 100%;
+    max-width: 90%;
     float: left;
 }
 
 .p1Gal :hover {
     cursor: pointer;
+    text-align:center;
+    margin-left: 2%;
     height: 60%;
-    width: 100%;
+    width: 90%;
 
     -webkit-filter: drop-shadow();
     filter: drop-shadow(10px 10px 10px #e23);
