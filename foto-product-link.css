@@ -44,11 +44,14 @@ h2.art-active {
 }
 
 h2.art-trigger img{
+
 	padding: 0;
 	clear: both;
-	height:100%;
+	height:80%;
 	width: 100%;
 }
+
+
 
 .art-container {
     padding: 0;
@@ -97,11 +100,11 @@ h1 {
 .nav a {
     display: inline-block;
     float: left;
-    width: 20%;
+    width: 22%;
     color: black;
     font-family: serif;
     text-decoration: none;
-    padding:3px;
+    padding:1px;
     background-color: #D3D3D3;
     height: 65%;
 
@@ -121,9 +124,8 @@ h1 {
     height: auto;
     max-height: 100%;
 
-    width: auto;
-    max-width: 100%;
-    padding-left: 40%;
+    width: 100%;
+    padding-left: 30%;
     padding-right: 40%;
     background-color: yellow;
 
@@ -139,4 +141,33 @@ h1 {
 .spacer{
     width:100%;
     height: 60px;
+}
+
+
+footer{
+    color:red;
+}
+
+///Gallery///
+
+.mySlides {
+    display:none
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer; 
+    color:white; 
+}
+
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
+}
+
+iframe {
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+>>>>>>> bd33808557a8475f870496c23d1dc5eaffdaaef5
 }

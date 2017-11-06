@@ -4,11 +4,12 @@
 	<title></title>
 	
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	<link rel="stylesheet" type="text/css" href="foto-product-link.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript">
 		  $(document).ready(function() {
     $('#contact_form').bootstrapValidator({
@@ -131,13 +132,51 @@
             }, 'json');
         });
 });
-
-
-
 	</script>
 
 	<style type="text/css">
-		#success_message{ display: none;}
+		#success_message { 
+      display: none;
+    }
+
+    .img-size {
+      float: right;
+      flex-direction: column;
+      height: 0px;
+    }
+
+    .aboutus {
+      margin: 16px;
+      padding: 35px;
+      display: inline-block;
+      background-color: #f5f5f5;
+      border: 1px solid #e3e3e3;
+      box-sizing: border-box;
+    }
+
+    .labore {
+      display: inline-flex;
+      justify-content: center;
+    }
+
+    #text {
+      width: 35%;
+      text-align: left;
+    }
+
+    #img1 {
+      width: 25%;
+    }
+
+    #img2 {
+      width: 25%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+
 
 	</style>
 </head>
@@ -145,18 +184,88 @@
 
 
 <body>
+  <br>
+  <br>
+  <h1 style="color: red;"><i>Ferrari</i></h1>
+        <img class="emblem" src="Images/emblem.png">
+    </header>
+    <div class="spacer"></div>
+    <nav>
+
+
+        <ul class="nav">
+            <li><a style="background-color: white" href="ferrariHome"><img src="Images/ferrarilogo.png" style="width: 110%;"></a></li>
+            
+
+            <li><a href="ferrariProducts">Products</a></li>
+            <li><a href="ferrariAbout">About</a></li>
+        </ul>
+    </nav>
+
+<br>
+<br>
+<br>
+
+<div class="labore">
+<div class="aboutus" id="img1">
+  <img src="Images/1.jpg">
+  <br>
+  <br>
+  <img src="Images/2.jpg">
+  <br>
+  <br>
+  <img src="Images/3.jpg">
+</div>
+
+<div class="aboutus" id="text">
+    <h1> About Us </h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br>
+</div>
+
+<div class="aboutus" id="img2">
+  <img src="Images/4.jpg">
+  <br>
+  <br>
+  <img src="Images/5.jpg">
+  <br>
+  <br>
+  <img src="Images/6.jpg">
+</div>
+</div>
+
+
+  <br>
+  <br>
+  <br>
 
 <div class="container">
-
     <form class="well form-horizontal" action=" " method="post"  id="contact_form">
 <fieldset>
 
-<!-- Form Name -->
-<legend>Contact Us Today!</legend>
+<legend style="text-align: center; padding-bottom: 15px;">Contact us</legend>
 
-<!-- Text input-->
 
-<div class="form-group">
+
+<div class="form-group" style="" >
   <label class="col-md-4 control-label">First Name</label>  
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
@@ -166,9 +275,7 @@
   </div>
 </div>
 
-<!-- Text input-->
-
-<div class="form-group">
+<div class="form-group" style="">
   <label class="col-md-4 control-label" >Last Name</label> 
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -178,8 +285,20 @@
   </div>
 </div>
 
-<!-- Text input-->
-       <div class="form-group">
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(0031)6555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<div class="img-size">
+    <img src="Images/emblem.png" style="width: 350px; float: right;">
+</div>
+
+<div class="form-group">
   <label class="col-md-4 control-label">E-Mail</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -189,103 +308,19 @@
   </div>
 </div>
 
-
-<!-- Text input-->
-       
-<div class="form-group">
-  <label class="col-md-4 control-label">Phone #</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-    </div>
-  </div>
-</div>
-
-<!-- Text input-->
-      
-<div class="form-group">
-  <label class="col-md-4 control-label">Address</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="address" placeholder="Address" class="form-control" type="text">
-    </div>
-  </div>
-</div>
-
-<!-- Text input-->
- 
-<div class="form-group">
-  <label class="col-md-4 control-label">City</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="city" placeholder="city" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
 <!-- Select Basic -->
    
 <div class="form-group"> 
-  <label class="col-md-4 control-label">State</label>
+  <label class="col-md-4 control-label">Model</label>
     <div class="col-md-4 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
     <select name="state" class="form-control selectpicker" >
-      <option value=" " >Please select your state</option>
-      <option>Alabama</option>
-      <option>Alaska</option>
-      <option >Arizona</option>
-      <option >Arkansas</option>
-      <option >California</option>
-      <option >Colorado</option>
-      <option >Connecticut</option>
-      <option >Delaware</option>
-      <option >District of Columbia</option>
-      <option> Florida</option>
-      <option >Georgia</option>
-      <option >Hawaii</option>
-      <option >daho</option>
-      <option >Illinois</option>
-      <option >Indiana</option>
-      <option >Iowa</option>
-      <option> Kansas</option>
-      <option >Kentucky</option>
-      <option >Louisiana</option>
-      <option>Maine</option>
-      <option >Maryland</option>
-      <option> Mass</option>
-      <option >Michigan</option>
-      <option >Minnesota</option>
-      <option>Mississippi</option>
-      <option>Missouri</option>
-      <option>Montana</option>
-      <option>Nebraska</option>
-      <option>Nevada</option>
-      <option>New Hampshire</option>
-      <option>New Jersey</option>
-      <option>New Mexico</option>
-      <option>New York</option>
-      <option>North Carolina</option>
-      <option>North Dakota</option>
-      <option>Ohio</option>
-      <option>Oklahoma</option>
-      <option>Oregon</option>
-      <option>Pennsylvania</option>
-      <option>Rhode Island</option>
-      <option>South Carolina</option>
-      <option>South Dakota</option>
-      <option>Tennessee</option>
-      <option>Texas</option>
-      <option> Uttah</option>
-      <option>Vermont</option>
-      <option>Virginia</option>
-      <option >Washington</option>
-      <option >West Virginia</option>
-      <option>Wisconsin</option>
-      <option >Wyoming</option>
+      <option value=" " >Please select your product</option>
+      <option>Product model #1</option>
+      <option>Product model #2</option>
+      <option >Product model #3</option>
+      <option >Product model #4</option>
     </select>
   </div>
 </div>
@@ -293,30 +328,22 @@
 
 <!-- Text input-->
 
-<div class="form-group">
-  <label class="col-md-4 control-label">Zip Code</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
-    </div>
-</div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label">Website or domain name</label>  
+  <label class="col-md-4 control-label">Subject</label>  
    <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-  <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+  <input name="subject" placeholder="Subject" class="form-control" type="text">
     </div>
   </div>
 </div>
 
 <!-- radio checks -->
  <div class="form-group">
-                        <label class="col-md-4 control-label">Do you have hosting?</label>
+                        <label class="col-md-4 control-label" style="padding-left: 200px">Would you like to receive the latest news?</label>
                         <div class="col-md-4">
                             <div class="radio">
                                 <label>
@@ -334,11 +361,11 @@
 <!-- Text area -->
   
 <div class="form-group">
-  <label class="col-md-4 control-label">Project Description</label>
+  <label class="col-md-4 control-label">Message</label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-        	<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+        	<textarea class="form-control" name="comment" placeholder="Please write your message here."></textarea>
   </div>
   </div>
 </div>
