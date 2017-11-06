@@ -185,8 +185,4 @@ header {
     text-align: center;
 }
 
-@media(max-width: 500px) {
-    .P488vid {
-        width: 50px;
-    }
-}
+
