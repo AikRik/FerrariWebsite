@@ -195,14 +195,7 @@ iframe {
     float: left;
     overflow: hidden;
 }
-/*display: inline-block;
-    float: left;
-    width: 22%;
-    color: black;
-    font-family: "Courier New", Courier, monospace;
-    text-decoration: none;
-    background-color: #D3D3D3;
-    height: 100%;*/
+
 .dropdown .dropbtn {
     cursor: pointer;
     font-size: 16px;    
