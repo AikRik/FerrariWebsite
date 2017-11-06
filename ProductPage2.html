@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///Users/mac/Documents/Programming/FerrariWebPage/Productpage2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Product 2</title>
+    <link rel="stylesheet" type="text/css" href="Productpage2.css">
+</head>
+
+<body>
+  <h1>GT 250</h1>
+  <div class="spacer"></div>
+    <div class="row" id="imagesrow">
+        <div class="column" style="
+    padding-left: 0px;
+    padding-right: 0px;
+">
+            <img src="Images/gt250front.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" id="el" style="
+    width: 250px;
+    height: 150px;
+">
+        </div>
+        <div class="column" style="
+    padding-left: 0px;
+    padding-right: 0px;
+">
+            <img src="Images/gt250back.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" id="el" style="
+    width: 250px;
+    height: 150px;
+">
+        </div>
+        <div class="column" style="
+    padding-left: 0px;
+    padding-right: 0px;
+">
+            <img src="Images/gt250interior.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" id="el" style="
+    width: 250px;
+    height: 150px;
+">
+        </div>
+      
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">×</span>
+        <div class="modal-content">
+            <div class="mySlides" style="display: block;">
+                <div class="numbertext">1 / 3</div>
+                <img src="Images/gt250front.jpg" style="width:100%">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <div class="numbertext">2 / 3</div>
+                <img src="Images/gt250back.jpg" style="width:100%">
+            </div>
+            <div class="mySlides" style="display: none;background-color: black">
+                <div class="numbertext">3 / 3</div>
+                <img src="Images/gt250interior.jpg" style="margin: 0 auto; display: inherit; width:50%">
+            </div>
+           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <p id="caption">Front</p>
+            </div>
+            <div class="column">
+                <img class="demo" src="Images/gt250front.jpg" onclick="currentSlide(1)" alt="Front">
+                <img class="demo" src="Images/gt250back.jpg" onclick="currentSlide(2)" alt="Back" >
+                <img class="demo" src="Images/gt250interior.jpg" onclick="currentSlide(3)" alt="Interior" >
+                <br>
+                <br>
+            </div>
+              
+        </div>
+    </div>
+    <div class="borderline">
+    <br>
+    <div class="leftside">
+    <img src="Images/250gtleft.jpg" class="imgleft">
+  </div>
+    <div class="rightside"><p class="textright">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+</div>
+<div class="borderline2">
+  
+<div class="youtube">
+        <div class="w3-content w3-display-container" id="fittobox" style="max-width: 100%; max-block-size: 400px; background-color: white;">
+          <iframe width="100%" height="410" src="https://www.youtube.com/embed/lvsL8WEnJdQ?rel=0&amp;controls=0&amp;showinfo=0&amp;start=17&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+         
+         
+        </div>
+
+
+</div>
+</div>
+<br class="spacer">
+
+
+
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+</body></html>
