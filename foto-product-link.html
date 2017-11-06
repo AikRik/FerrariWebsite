@@ -18,21 +18,27 @@
     <div class="spacer"></div>
     <nav>
         <ul class="nav">
-<<<<<<< HEAD
+
             <li><a style="background-color: white; border: 1px solid white; padding: 3px 3px;" href="ferrariHome"><img src="Images/ferrarilogo.png"></a></li>
             
 
-            <li><a class="navid" href="ferrariProducts">Products</a></li>
+            
+                    <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="PageProduct1.html">488GTB</a>
+      <a href="ProductPage2.html">250GTO</a>
+     
+    </div>
+  </div> 
 
 
 
 
             <li><a class="navid" href="ferrariAbout">About</a></li>
-=======
-            <li><a style="background-color: white" href="ferrariHome"><img src="Images/ferrarilogo.png"></a></li>
-            <li><a href="ferrariProducts">Products</a></li>
-            <li><a href="ferrariAbout">About</a></li>
->>>>>>> 3f4ff4bdab53ff68390d2422626103d45477b185
+
         </ul>
     </nav>
 
@@ -116,7 +122,19 @@
             }
 
         });
+          function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
 
         </script>
         <div class=spacer>
