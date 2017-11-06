@@ -106,7 +106,6 @@ div.hidden {
 }
 
 
-/* Position the "next button" to the right */
 
 .next {
     right: 0;
@@ -114,7 +113,6 @@ div.hidden {
 }
 
 
-/* On hover, add a black background color with a little bit see-through */
 
 .prev:hover,
 .next:hover {
@@ -238,7 +236,7 @@ img.demo {
 
     width: auto;
     max-width: 100%;
-    padding-left: 40%;
+    padding-left: 32%;
     padding-right: 40%;
     background-color: yellow;
 }
