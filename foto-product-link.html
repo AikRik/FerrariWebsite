@@ -17,9 +17,8 @@
     </header>
     <div class="spacer"></div>
     <nav>
-
-
         <ul class="nav">
+<<<<<<< HEAD
             <li><a style="background-color: white; border: 1px solid white; padding: 3px 3px;" href="ferrariHome"><img src="Images/ferrarilogo.png"></a></li>
             
 
@@ -29,6 +28,11 @@
 
 
             <li><a class="navid" href="ferrariAbout">About</a></li>
+=======
+            <li><a style="background-color: white" href="ferrariHome"><img src="Images/ferrarilogo.png"></a></li>
+            <li><a href="ferrariProducts">Products</a></li>
+            <li><a href="ferrariAbout">About</a></li>
+>>>>>>> 3f4ff4bdab53ff68390d2422626103d45477b185
         </ul>
     </nav>
 
@@ -62,24 +66,24 @@
         <div class="art-accordion">
         <h2 class="art-trigger"><a href="#"><img src="images/488GTB.jpg"></a></h2>
         <div class="art-container">
-            <div class="art-block"><div class="fotoLink"><a class="fotoLink" href="page2.html" target="_blank" style="color: #2C2B33">The: 488GT</div></a></div>
+            <div class="art-block"><div class="fotoLink"><a class="fotoLink" href="PageProduct1.html"  style="color: #2C2B33">The: 488GT</div></a></div>
         </div>
         <h2 class="art-trigger"><a href="#"><img src="images/250GT.jpg"></a></h2>
         <div class="art-container">
-            <div class="art-block"><div class="fotoLink"><a  href="page3.html" target="_blank" style="color: #2C2B33">The: 250GT </div></a></div>
+            <div class="art-block"><div class="fotoLink"><a  href="ProductPage2.html" style="color: #2C2B33">The: 250GT </div></a></div>
 
         </div>
         <script type="text/javascript">
-        $(document).ready(function($) { //Set default open/close settings
+        $(document).ready(function($) { 
 
-            var divs = $('.art-accordion>div').hide(); //Hide/close all containers
+            var divs = $('.art-accordion>div').hide(); 
 
             var h2s = $('.art-accordion>h2').click(function() {
                 h2s.not(this).removeClass('active')
                 $(this).toggleClass('active')
                 divs.not($(this).next()).slideUp()
                 $(this).next().slideToggle()
-                return false; //Prevent the browser jump to the link anchor
+                return false; 
 
             });
             

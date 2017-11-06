@@ -109,14 +109,13 @@ header {
     width: 30%;
     height: 30%;
     margin-left: 20px;
-    /*16px 16px 10px re*/
 }
 
 .intImg {
 	text-align:center;
     display: block;
     padding: 0;
-    width: 100%;
+    width: 80%;
     height: 50%;
     margin-left: 20px;
    }
@@ -125,7 +124,7 @@ header {
 	text-align:center;
     display: inline-block;
     padding: 0;
-    width: 100%;
+    width: 80%;
     height: 50%;
     margin-left: 20px;
 }
@@ -134,50 +133,47 @@ header {
 	text-align:center;
     display: inline-block;
     padding: 0;
-    width: 100%;
+    width: 80%;
     height: 50%;
     margin-left: 20px;
 }
 
 .p1txt1 {
     float: left;
-    margin: 5%;
-    padding:3%;
-    padding-left: 2%
-    /*border: 2px solid black;*/
+
 }
 
 .p1txt1 p {
-    max-width: 100%;
+    max-width: 90%;
     float: left;
 }
 
 .p1txt2 {
     clear: both;
     float: left;
-    /*border: 2px solid black;*/
 }
 
 .p1txt2 p {
-    max-width: 100%;
+    max-width: 90%;
     float: left;
 }
 
 .p1txt3 {
     clear: both;
     float: left;
-    /*	border: 2px solid black;*/
 }
 
 .p1txt3 p {
-    max-width: 100%;
+    max-width: 90%;
     float: left;
 }
 
 .p1Gal :hover {
     cursor: pointer;
+    text-align:center;
+    margin-left: 2%;
     height: 60%;
-    width: 100%;
+    width: 90%;
 
     -webkit-filter: drop-shadow();
     filter: drop-shadow(10px 10px 10px #e23);
@@ -187,8 +183,4 @@ header {
     text-align: center;
 }
 
-@media(max-width: 500px) {
-    .P488vid {
-        width: 50px;
-    }
-}
+
