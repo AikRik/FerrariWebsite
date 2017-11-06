@@ -148,6 +148,27 @@
                             }
                         }
                     }
+
+
+document.getElementById("theButton").onclick = submit
+
+  function validateForm()
+    {
+        var a=document.forms["Form"]["first_name"].value;
+        var b=document.forms["Form"]["last_name"].value;
+        var c=document.forms["Form"]["email"].value;
+        var d=document.forms["Form"]["comment"].value;
+        if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="")
+        {
+            alert("Please Fill All Required Field");
+            return false;
+        }
+        else {
+      alert("Thanks for contacting us, we will get back to you shortly.")
+    }
+    }
+
+
 	</script>
 
 	<style type="text/css">
@@ -240,6 +261,8 @@
 <div class="aboutus" id="text">
     <h1> About Us </h1>
     <br>
+    <br>
+    <br>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -278,7 +301,7 @@
   <br>
 
 <div class="container">
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form" name="Form" onsubmit="return validateForm()">
 <fieldset>
 
 <legend style="text-align: center; padding-bottom: 15px;">Contact us</legend>
@@ -286,21 +309,21 @@
 
 
 <div class="form-group" style="" >
-  <label class="col-md-4 control-label">First Name</label>  
+  <label class="col-md-4 control-label">First Name*</label>  
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+  <input  name="first_name" id="a" placeholder="First Name" class="form-control"  type="text">
     </div>
   </div>
 </div>
 
 <div class="form-group" style="">
-  <label class="col-md-4 control-label" >Last Name</label> 
+  <label class="col-md-4 control-label" >Last Name*</label> 
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+  <input name="last_name" id="b" placeholder="Last Name" class="form-control"  type="text">
     </div>
   </div>
 </div>
@@ -319,16 +342,16 @@
 </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label">E-Mail</label>  
+  <label class="col-md-4 control-label">E-Mail*</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+  <input name="email" id="c" placeholder="E-Mail Address" class="form-control"  type="text">
     </div>
   </div>
 </div>
 
-<!-- Select Basic -->
+
    
 <div class="form-group"> 
   <label class="col-md-4 control-label">Model</label>
@@ -346,11 +369,7 @@
 </div>
 </div>
 
-<!-- Text input-->
 
-
-
-<!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label">Subject</label>  
    <div class="col-md-4 inputGroupContainer">
@@ -361,7 +380,7 @@
   </div>
 </div>
 
-<!-- radio checks -->
+
  <div class="form-group">
                         <label class="col-md-4 control-label" style="padding-left: 200px">Would you like to receive the latest news?</label>
                         <div class="col-md-4">
@@ -378,33 +397,34 @@
                         </div>
                     </div>
 
-<!-- Text area -->
+
   
 <div class="form-group">
-  <label class="col-md-4 control-label">Message</label>
+  <label class="col-md-4 control-label">Message*</label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-        	<textarea class="form-control" name="comment" placeholder="Please write your message here."></textarea>
+        	<textarea class="form-control" name="comment" id="d" placeholder="Please write your message here."></textarea>
   </div>
   </div>
 </div>
 
-<!-- Success message -->
+
 <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
 
-<!-- Button -->
+
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+    <button type="submit" class="btn btn-warning" id="theButton" >Send <span class="glyphicon glyphicon-send"></span></button>
   </div>
 </div>
+<p style="text-align: right;display: block;margin: 0 auto;width: 30%;">* = required</p>
 
 </fieldset>
 </form>
 </div>
-    </div><!-- /.container -->
+    </div>
 
 
 </body>
