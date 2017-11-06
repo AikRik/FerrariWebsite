@@ -81,7 +81,7 @@ h1 {
 }
 
 .nav {
-    width: 100%;
+    width: 110%;
     height: 42px;
     list-style: none;
     text-align: center;
@@ -91,9 +91,15 @@ h1 {
 
 }
 
+.navid {
+    padding: 7px !important;
+    font-size: 18px;
+    border: 1px solid white;
+}
+
 .nav li {
     display: inline;
-     background-color:red;
+     background-color:red !important; 
     
 }
 
@@ -102,17 +108,16 @@ h1 {
     float: left;
     width: 22%;
     color: black;
-    font-family: serif;
+    font-family: "Courier New", Courier, monospace;
     text-decoration: none;
-    padding:1px;
     background-color: #D3D3D3;
-    height: 65%;
+    height: 100%;
 
 
 }
 
 .nav a:hover {
-    background-color: #ff3300;
+    background-color: #ff3300 !important;
     color: yellow;
 
 }
@@ -125,8 +130,8 @@ h1 {
     max-height: 100%;
 
     width: 100%;
-    padding-left: 30%;
-    padding-right: 40%;
+    padding-left: 32%;
+    padding-right: 32%;
     background-color: yellow;
 
 
@@ -169,5 +174,5 @@ iframe {
     left: 0%;
     right: 0%;
     margin: 0 auto;
->>>>>>> bd33808557a8475f870496c23d1dc5eaffdaaef5
 }
+
