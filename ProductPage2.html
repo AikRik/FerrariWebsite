@@ -2,14 +2,58 @@
 <!-- saved from url=(0072)file:///Users/mac/Documents/Programming/FerrariWebPage/Productpage2.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>Product 2</title>
+    <link rel="stylesheet" type="text/css" href="foto-product-link.css">
     <link rel="stylesheet" type="text/css" href="Productpage2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
+    <script type="text/javascript">
+        function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                        if (!e.target.matches('.dropbtn')) {
+                            var myDropdown = document.getElementById("myDropdown");
+                            if (myDropdown.classList.contains('show')) {
+                                myDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+    </script>
 </head>
+<style type="text/css">
+ .nav {
+    width: 80%;
+
+ } 
+
+ .nav a {
+    height: 86%;
+ }  
+
+</style>
 
 <body>
   <h1>GT 250</h1>
+  <img class="emblem" src="Images/emblem.png">
+   <div class="spacer"></div>
+  <nav>
+        <ul class="nav">
+            <li><a style="background-color: white; border: 1px solid white; padding: 6.5px ;" href="foto-product-link.html"><img src="Images/ferrarilogo.png"></a></li>
+            <div class="dropdown">
+                <button class="dropbtn" style="border: 2.5px solid white; color: black;" onclick="myFunction()">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="PageProduct1.html">488GTB</a>
+                    <a href="ProductPage2.html">250GTO</a>
+                </div>
+            </div>
+            <li><a class="navid" style="padding: 12px 0px 0px 0px !important; border: 1.5px solid white;" href="contactus.html">About</a></li>
+        </ul>
+    </nav>
   <div class="spacer"></div>
+   <div class="spacer"></div>
     <div class="row" id="imagesrow">
         <div class="column" style="
     padding-left: 0px;
@@ -44,13 +88,13 @@
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">×</span>
         <div class="modal-content">
-            <div class="mySlides" style="display: block;">
+            <div class="mySlides" style="display: block;background-color: black">
                 <div class="numbertext">1 / 3</div>
-                <img src="Images/gt250front.jpg" style="width:100%">
+                <img src="Images/gt250front.jpg" style="margin: 0 auto; display: inherit; width:50%">
             </div>
-            <div class="mySlides" style="display: none;">
+            <div class="mySlides" style="display: none;background-color: black">
                 <div class="numbertext">2 / 3</div>
-                <img src="Images/gt250back.jpg" style="width:100%">
+                <img src="Images/gt250back.jpg" style="margin: 0 auto; display: inherit; width:50%">
             </div>
             <div class="mySlides" style="display: none;background-color: black">
                 <div class="numbertext">3 / 3</div>
@@ -68,6 +112,10 @@
                 <img class="demo" src="Images/gt250interior.jpg" onclick="currentSlide(3)" alt="Interior" >
                 <br>
                 <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
               
         </div>
@@ -77,12 +125,13 @@
     <div class="leftside">
     <img src="Images/250gtleft.jpg" class="imgleft">
   </div>
-    <div class="rightside"><p class="textright">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    <div class="rightside"><p class="textright">The Ferrari 250 GTO is a GT car produced by Ferrari from 1962 to 1964 for homologation into the FIA's Group 3 Grand Touring Car category. It was powered by Ferrari's Tipo 168/62 V12 engine.</p>
+
+<p class="textright">The "250" in its name denotes the displacement in cubic centimeters of each of its cylinders; "GTO" stands for "Gran Turismo Omologato",Italian for "Grand Touring Homologated."</p>
+
+<p class="textright">Just 39 250 GTOs were manufactured between 1962 and 1964. This includes 33 cars with 1962-63 bodywork (Series I), three with 1964 (Series II) bodywork similar to the Ferrari 250 LM, and three "330 GTO" specials with a larger engine. Four of the older 1962-1963 (Series I) cars were updated in 1964 with Series II bodies.</p>
+
+</p></div>
 </div>
 <div class="borderline2">
 <div class="youtube">
