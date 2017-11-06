@@ -15,6 +15,9 @@ body {
 
 }
 
+div.hidden {
+    display: none
+}
 
 .row > .column {
   padding: 0 8px;
@@ -146,6 +149,7 @@ img.demo {
 
 
 #el {
+
     --box-shadow-color: grey;
     box-shadow: 1px 2px 3px var(--box-shadow-color);
 }
@@ -165,6 +169,7 @@ img.demo {
   border-top: 2px solid #8d1111;
   border-bottom: 2px solid #8d1111;
   height: 425px;
+  
 }
 .borderline2 {
 
@@ -178,18 +183,25 @@ img.demo {
 
   float: left;
   width: 50%;
+
 }
 
 .imgleft {
-  max-width: 100%;
-  
+  display: block;
+  max-width: 80%;
+  padding-left: 30px;
+  padding-top: 30px;
 
 }
 
 .rightside {
 
 float: right;
-width: 50%;
+width: 30%;
+display: block;
+padding-right: 140px;
+padding-top: 50px;
+
 
 }
 

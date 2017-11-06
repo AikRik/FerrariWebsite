@@ -3,6 +3,7 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>Product 2</title>
     <link rel="stylesheet" type="text/css" href="Productpage2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -12,31 +13,32 @@
         <div class="column" style="
     padding-left: 0px;
     padding-right: 0px;
-">
+"><div class="hidden">
+
             <img src="Images/gt250front.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" id="el" style="
     width: 250px;
     height: 150px;
-">
+"></div>
         </div>
         <div class="column" style="
     padding-left: 0px;
     padding-right: 0px;
-">
+"><div class="hidden">
             <img src="Images/gt250back.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" id="el" style="
     width: 250px;
     height: 150px;
-">
+"> </div>
         </div>
         <div class="column" style="
     padding-left: 0px;
     padding-right: 0px;
-">
+"> <div class="hidden">
             <img src="Images/gt250interior.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" id="el" style="
     width: 250px;
     height: 150px;
 ">
         </div>
-      
+      </div>
     </div>
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">×</span>
@@ -82,9 +84,8 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 </div>
 <div class="borderline2">
-  
 <div class="youtube">
-        <div class="w3-content w3-display-container" id="fittobox" style="max-width: 100%; max-block-size: 400px; background-color: white;">
+        <div class="w3-content w3-display-container" id="fittobox" style="max-width: 100%; max-block-size: 400px; background-color: black;">
           <iframe width="100%" height="410" src="https://www.youtube.com/embed/lvsL8WEnJdQ?rel=0&amp;controls=0&amp;showinfo=0&amp;start=17&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
 
          
@@ -99,6 +100,13 @@
 
 
     <script>
+
+$(document).ready(function () {
+    $('div.hidden').fadeIn(5000).removeClass('div.hidden');
+});
+
+
+
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
