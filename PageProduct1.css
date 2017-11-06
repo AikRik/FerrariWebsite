@@ -113,7 +113,11 @@ header {
 
 .intImg {
 	text-align:center;
+<<<<<<< HEAD
     display: inline-block;
+=======
+    display: block;
+>>>>>>> b02649ac202f28d3e32e0546b8c99005323291e8
     padding: 0;
     width: 80%;
     height: 50%;
@@ -140,43 +144,72 @@ header {
 
 .p1txt1 {
     float: left;
+<<<<<<< HEAD
     padding: 2px;
 }
 
 .p1txt1 p {
     max-width: 100%;
     padding: 2px;
+=======
+
+}
+
+.p1txt1 p {
+    max-width: 90%;
+>>>>>>> b02649ac202f28d3e32e0546b8c99005323291e8
     float: left;
 }
 
 .p1txt2 {
     clear: both;
+<<<<<<< HEAD
     padding: 2px;
+=======
+>>>>>>> b02649ac202f28d3e32e0546b8c99005323291e8
     float: left;
 }
 
 .p1txt2 p {
+<<<<<<< HEAD
     max-width: 100%;
     padding: 2px;
+=======
+    max-width: 90%;
+>>>>>>> b02649ac202f28d3e32e0546b8c99005323291e8
     float: left;
 }
 
 .p1txt3 {
     clear: both;
+<<<<<<< HEAD
     padding: 2px;
+=======
+>>>>>>> b02649ac202f28d3e32e0546b8c99005323291e8
     float: left;
 }
 
 .p1txt3 p {
+<<<<<<< HEAD
     max-width: 100%;
     padding: 2px;
+=======
+    max-width: 90%;
+>>>>>>> b02649ac202f28d3e32e0546b8c99005323291e8
     float: left;
 }
 
 .p1Gal :hover {
     cursor: pointer;
+<<<<<<< HEAD
     height: 60%;
     width: 100%;
+=======
+    text-align:center;
+    margin-left: 2%;
+    height: 60%;
+    width: 90%;
+>>>>>>> b02649ac202f28d3e32e0546b8c99005323291e8
 
     -webkit-filter: drop-shadow();
     filter: drop-shadow(10px 10px 10px #e23);
