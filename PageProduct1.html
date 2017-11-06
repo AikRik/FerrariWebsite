@@ -3,36 +3,59 @@
 
 <head>
     <title>488GTB</title>
+    <link rel="stylesheet" type="text/css" href="foto-product-link.css">
     <link rel="stylesheet" type="text/css" href="PageProduct1.css">
+    <script type="text/javascript">
+        function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                        if (!e.target.matches('.dropbtn')) {
+                            var myDropdown = document.getElementById("myDropdown");
+                            if (myDropdown.classList.contains('show')) {
+                                myDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+    </script>
 </head>
+<style type="text/css">
+ .nav {
+    width: 80%;
+
+ } 
+
+ .nav a {
+    height: 86%;
+ }  
+
+</style>
 
 <body>
+        <header>
+        <h1 style="color: red;"><i></i></h1>
+        <img class="emblem" src="Images/emblem.png">
+    </header>
+    <div class="spacer"></div>
     <header>The: 488GTB</header>
- <nav>
+     <nav>
         <ul class="nav">
-
-            <li><a style="background-color: white; border: 1px solid white; padding: 3px 3px;" href="foto-product-link.html"><img src="Images/ferrarilogo.png"></a></li>
-            
-
-            
-                    <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Products
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="PageProduct1.html">488GTB</a>
-      <a href="ProductPage2.html">250GTO</a>
-     
-    </div>
-  </div> 
-
-
-
-
-            <li><a class="navid" href="contactus.html">About</a></li>
-
+            <li><a style="background-color: white; border: 1px solid white; padding: 6.5px ;" href="foto-product-link.html"><img src="Images/ferrarilogo.png"></a></li>
+            <div class="dropdown">
+                <button class="dropbtn" style="border: 2.5px solid white; color: black;" onclick="myFunction()">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="PageProduct1.html">488GTB</a>
+                    <a href="ProductPage2.html">250GTO</a>
+                </div>
+            </div>
+            <li><a class="navid" style="padding: 12px 0px 0px 0px !important; border: 1.5px solid white;" href="contactus.html">About</a></li>
         </ul>
     </nav>
+
     <p class="p1Intro"><b>Introducing the amazing 288GTB:</b>
         <br/>
         <br/> The Ferrari 488 (Tipo F142M) is a mid-engined sports car produced by the Italian sports car manufacturer Ferrari, introduced in 2015 to replace the previous 458.

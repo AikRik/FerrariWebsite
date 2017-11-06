@@ -3,8 +3,8 @@ body {
     color: #C4BCC6;
 }
 
-header {
-    height: 40px;
+header {/*
+    height: 40px;*/
     text-align: center;
     color: black;
     background-color: #e23;
@@ -12,7 +12,7 @@ header {
     border: 2px solid black;
 }
 
-.nav {
+/*.nav {
     width: 100%;
     height: 42px;
     list-style: none;
@@ -36,12 +36,12 @@ header {
     padding: 3px;
     background-color: #D3D3D3;
     height: 65%;
-}
-
+}*/
+/*
 .nav a:hover {
     background-color: #ff3300;
     color: yellow;
-}
+}*/
 
 .nav img {
 
@@ -185,7 +185,7 @@ _ .p1txt1 p {
 .P488vid {
     text-align: center;
 }
-
+/*
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -199,12 +199,12 @@ _ .p1txt1 p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+}*/
 
-.dropdown {
+/*.dropdown {
     float: left;
     overflow: hidden;
-}
+}*/
 
 .dropdown .dropbtn {
     cursor: pointer;
@@ -221,8 +221,9 @@ _ .p1txt1 p {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: red;
+    color: yellow !important;
 }
-
+/*
 .dropdown-content {
     display: none;
     position: absolute;
@@ -244,7 +245,7 @@ _ .p1txt1 p {
 .dropdown-content a:hover {
     background-color: #ddd;
 }
-
+*/
 .show {
     display: block;
 }
